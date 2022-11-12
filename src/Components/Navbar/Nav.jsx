@@ -38,7 +38,10 @@ function Nav() {
                                     <li className="nav-item" key={index}>
                                         <Link
                                             onClick={() => handelClick(index, nav)}
-                                            className={`nav-link    ${indexBtn === index && activeClass}`} to={nav == 'home' ? '' : nav} aria-current="page">
+                                            className={`nav-link    ${indexBtn === index && activeClass}`} 
+                                            to={nav == 'home' ? '' : nav} 
+                                            aria-current="page"
+                                            >
                                             <span className='active_hover'>{nav.toLocaleUpperCase()}</span>
                                             <span className="visually-hidden">(current)</span>
                                         </Link>
