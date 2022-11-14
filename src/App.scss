@@ -142,15 +142,15 @@
 }
 
 .app__header {
-
       .app__header-h1 {
             padding: 40px 0;
-            font-size: 3.75rem !important;
+            font-size: 3.75rem ;
             line-height: 2.75rem !important;
             text-transform: uppercase;
             font-weight: $font-bolder;
             font-family: $Roboto;
             position: relative;
+
 
             &::after {
                   content: "";
@@ -206,13 +206,16 @@
 
             .app__header-h1 {
                   padding: 40px 0;
-                  font-size: 3.75rem !important;
+                  font-size: 3.75rem ;
                   line-height: 2.75rem !important;
                   text-transform: uppercase;
                   font-weight: $font-bolder;
                   font-family: $Roboto;
                   position: relative;
-
+                  @media screen and (max-width:767px) {
+                        font-size: 40px !important;
+                        // background-color: red;
+                  }
                   &::after {
                         content: "";
                         position: absolute;
@@ -220,7 +223,7 @@
                         border-radius: 1rem;
                         width: 70%;
                         background-color: white;
-                        bottom: -10px;
+                        bottom: -0px;
                         left: 50%;
                         transform: translate(-50%);
                   }
@@ -230,7 +233,7 @@
 
             .app__home-icon {
                   position: absolute;
-                  bottom: -15px;
+                  bottom: -5px;
                   color: $light-color;
                   font-size: 2rem;
                   left: 50%;
